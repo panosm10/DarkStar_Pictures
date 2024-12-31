@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <script> 
+    $(function(){
+      $("#includedContent").load("b.html"); 
+    });
+    </script>
+    <div id="includedContent"></div>
+	<title>Website</title>
+
+</head>
+<body class="homepage">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary background-color: white;">
+    <div class="container-fluid">
+        <a style="font-weight: bold; font-size:large;" class="navbar-brand" href="index.html">DarkStar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a style="font-weight:bold; font-size:large;" class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-weight:bold; font-size:large;" class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-weight:bold; font-size:large;" class="nav-link active" href="ourwork.html">Our Work</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-weight:bold; font-size:large;" class="nav-link active" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+	<div>
+    <span class="title">DarkStar</span>
+    <br>
+    <span class="title">Pictures</span>
+	</div>
+  <img src="pics/logo.png" width="100px" height="200px">
+</body>
+</html>
+<style>
+	html, body {
+		width: 100%;
+		margin: 0px;
+		padding: 0;
+		overflow-x: hidden;
+	}
+
+	body {
+		background-image: url("pics/pic bg abtus.png");
+		background-size: 100% 80%; /* Full width, 80% height */
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center top; /* Align to top of the page */
+		min-height: 100vh;
+	}
+
+	.navbar {
+        background-image: url("../pics/bg.jpeg");
+        background-size: cover; 
+		width: 100vw; /* Full viewport width */
+		margin-left: 10px; /* Center the navbar */
+		margin-right: 20px;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.container-fluid {
+		width: 100%;
+		padding:0;
+		margin: 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		body {
+			background-image: url("pics/pic bg abtus.png");
+			background-size: 100% 90%; /* Increased height to prevent cutting off */
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-attachment: scroll;
+		}
+	}
+</style>
