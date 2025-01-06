@@ -11744,6 +11744,9 @@ fieldset:disabled .btn {
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
 
+body {
+  overflow:hidden;
+}
 
 .homepage{
   background-image:url('../pics/bg.jpeg');
