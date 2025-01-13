@@ -111,10 +111,20 @@
 	top: 180px;
 	}
 
-	.AboutImg  {
+	@media screen and (max-width: 100%) {
+        .AboutImg  {
 		size: 30%;
 		left: 65%;
-		top: -340px;
+		top: 340px;
+        }
 	}
+
+
+    
+    @media screen and (max-width: 1000px) {
+	    .AboutImg {
+		    	display: none; /* Hide the image on phone screens */
+		    }
+    }
 
 </style>
